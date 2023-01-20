@@ -1,0 +1,422 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+form {
+    text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 2px solid #4acc85;
+    -webkit-text-fill-color: #263238 !important;
+}
+
+.form-box h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    background: none;
+    text-align: center;
+}
+
+.textfield input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #cdcecf;
+    color: #263238;
+    font-size: 10pt;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #e6e7e8;
+    transition: .5s;
+}
+
+.textfield label {
+    color: #263238;
+    font-weight: 800;
+    background: none;
+    margin-bottom: 5px;
+}
+
+.colun-line {
+    display: flex;
+}
+
+.colun-line input {
+    text-align: center;
+}
+
+.colun-line .textfield {
+    align-items: center;
+}
+
+#telefone {
+    width: 150px;
+}
+
+#aniversario-data {
+    width: 120px;
+}
+
+#CEP {
+    width: 100px;
+}
+
+#UF {
+    text-transform: uppercase;
+    width: 55px;
+}
+
+#cidade {
+    width: 160px;
+}
+
+.aniversario-text label {
+    margin-left: 5px;
+}
+
+.aniversario-text {
+    width: 70%;
+}
+
+.textfield input::placeholder {
+    color: #26323849;
+}
+
+.btn-cadastrar {
+    width: 50%;
+    padding: 16px 0px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: white;
+    background: #f2b138;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.colun-line-nome {
+    display: flex;
+}
+
+.colun-line-nome .textfield {
+    width: 100%;
+}
+
+#text-nome {
+    width: 200px;
+    margin-left: 0;
+}
+
+.btn-cadastrar:hover {
+    background: #ce9731;
+}
+
+.textfield input:focus {
+    border: 2px solid #4acc85;
+    background-color: #4acc8577;
+}
+
+.colun-line-endereco {
+    display: flex;
+}
+
+.text-bairro {
+    width: 340px;
+}
+
+input:not(:placeholder-shown) {
+    transition: none;
+    background-color: #4acc8577;
+    border: 2px solid #e6e7e8;
+}
+
+.divisao-line1 {
+    width: 50%;
+    display: flex;
+}
+
+.divisao-line2 {
+    width: 100%;
+    display: flex;
+}
+
+.colun-line-nome-dados-conjuge {
+    display: flex;
+}
+
+.colun-line-nome-dados-conjuge input {
+    text-align: center;
+}
+
+#aniversario-data-conjuge {
+    width: 100%;
+}
+
+#aniversario-data-casamento {
+    width: 100%;
+}
+
+#telefone-conjuge {
+    width: 100%;
+}
+
+.check-casamento {
+    font-size: 100%;
+    font-weight: 800;
+    color: #263238;
+}
+
+.custom-radio input {
+    display: none;
+}
+
+.custom-radio input+label:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #cdcecf;
+    border: 2px solid gray;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 8px;
+    margin-bottom: 3px;
+    transition: 0.5s;
+}
+
+.custom-radio input:checked+label:before {
+    background-color: #4acc8577;
+    box-sizing: border-box;
+    border: 2px solid #4acc85;
+    padding: 4px;
+}
+
+.radio-line {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cadastro-conjuge {
+    display: none;
+    transition: 0.5s;
+}
+
+.forms-casamento {
+    height: 80%;
+}
+
+@media only screen and (max-width: 950px) {
+
+    .divisao-line1 {
+        width: 100%;
+    }
+
+    .card-login {
+        width: 85vw;
+    }
+
+    .colun-line-nome {
+        display: block;
+    }
+
+    .colun-line-nome .textfield {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #text-nome {
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login h1 {
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+
+    .left-login-image {
+        width: 50vw;
+    }
+
+    .box-dados {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    .form-right {
+        width: 100%;
+    }
+
+    .form-left {
+        width: 100%;
+    }
+
+    .img-cadastro {
+        display: none;
+    }
+
+    .btn-cadastrar {
+        width: 100%;
+    }
+
+    main {
+        margin-bottom: 90px;
+    }
+
+    .colun-line {
+        display: block;
+    }
+
+    .colun-line-endereco {
+        display: block;
+    }
+
+    .text-bairro {
+        width: 100%;
+    }
+
+    .form-box h2 {
+        font-size: 20px;
+    }
+
+    #telefone{
+        width: 100%;
+    }
+
+    .telefoneinput {
+        width: 50%;
+    }
+
+    .aniversario-text {
+        width: 50%;
+    }
+
+    #aniversario-data {
+        width: 100%;
+    }
+
+    .text-uf {
+        width: 20%;
+    }
+
+    #UF {
+        width: 100%;
+    }
+
+    .text-cidade {
+        width: 50%;
+    }
+    
+    #cidade {
+        width: 100%;
+    }
+
+    .text-cep{
+        width: 35%;
+    }
+
+    #CEP{
+        width: 100%;
+    }
+
+    .colun-line-nome-dados-conjuge{
+        display: block;
+    }
+
+    .textfield input {
+        width: 100%;
+        padding: 10px;
+        font-size: 9pt;
+        outline: none;
+        margin-bottom: 2px;
+        border: 2px solid #e6e7e8;
+        transition: .5s;
+    }
+
+    .textfield label{
+        font-size: 9pt;
+    }
+
+    .btn-cadastrar {
+        font-size: 9pt;
+        padding: 10px 0px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 3px;
+        color: white;
+        background: #f12824;
+        cursor: pointer;
+        transition: .5s;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    
+}

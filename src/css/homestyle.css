@@ -1,0 +1,182 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background: #ddeef0;
+}
+
+main {
+    min-height: 98vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    font-size: 10px;
+    width: 100vw;
+    text-align: center;
+    color: #999999;
+}
+
+footer a{
+    text-decoration: none;
+    color: #999999;
+}
+
+
+.cartoes a {
+    text-decoration: none;
+}
+
+.cartoes-home {
+    display: flex;
+}
+
+.button-link:hover {
+   transform: scale(1.02)
+}
+
+.cartao-home {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    margin: 10px;
+    max-width: 250px;
+
+}
+
+.cartao-home .cartao-topo {
+    padding: 30px 30px 0;
+    height: 200px;
+}
+
+.cartao-home .nome {
+    margin-bottom: 5px;
+}
+
+
+.cartao-home .detalhes {
+    color: #ffffff;
+    text-align: center;
+}
+
+.cartao-home img {
+    max-height: 100px;
+    max-width: 100px;
+    justify-content: center;
+}
+
+.cartao-home .cartao-informacoes ul {
+    list-style-type: none;
+}
+
+.cartao- .cartao-informacoes .status button {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.aniversario-natalicio {
+    background-color: #f2b138;
+}
+
+.aniversario-casamento {
+    background-color: #f2b138;
+}
+
+.cadastro {
+    background-color: #f2b138;
+}
+
+.cartao-imagem {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.cartao-imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+.cartao-topo {
+    align-items: center;
+}
+
+@media (max-width: 850px) {
+    .cartao-home {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .cartoes-home {
+        display:inline-block;
+    }
+
+    .listagem {
+        max-width: 200px;
+        display: block;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .cartoes {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .cartao-home {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .cartao-home .cartao-imagem {
+        width: 105px;
+        height: 105px;
+    }
+    
+    .cartao-home .cartao-informacoes {
+        padding: 50px 30px 30px;
+        margin-top: -50px;
+    }
+
+    .cartao-home .cartao-informacoes .informacoes {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .cartao-home .cartao-informacoes h3 {
+        font-size: 16px;
+    }
+
+    .listagem {
+        max-width: 300px;
+    }
+
+    .listagem ul {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .listagem .pokemon {
+        width: 130px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-bottom: 0;
+        border-radius: 8px;
+    }
+
+    .listagem .pokemon span {
+        padding-right: 5px;
+    }
+
+    .cartao-topo img{
+        padding-left: 20px;
+    }
+}
